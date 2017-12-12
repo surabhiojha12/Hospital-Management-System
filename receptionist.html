@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="dbms.css">
+
+</head>
+<body onscroll="myFunction()" onscroll="myFunction2()">
+
+
+
+
+
+<div id="fix"><image src="hos.jpg" class="top" width="50%" ><image src="hos.jpg" class="top" width="50%" ></div>
+
+<div id="navbar">
+  <a class="active" href="one.html">Home</a>
+  <a href="admin.html">ADMIN</a>
+  <a href="doctor.html">DOCTOR</a>
+  
+</div>
+
+<div class="header" id="header1">
+  <h1>WELCOME TO LIVE LIFE</h1>
+  <p>LIVE A HEALTHY LIFE</p>
+</div>
+
+<script>
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+
+
+<h2 class="my">RECEPTIONIST LOGIN</h2>
+
+<form action="receptionlogin.php" method="post">
+
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="email" placeholder="Enter Username" name="email" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    
+ </div>
+</form>
+
+
+<footer class="text-center">
+  <a class="up-arrow" href="#fix" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>LIVE LIFE<a href="https://www.shopiteasyshop.com" title="Visit w3schools"></br>www.livelife.com</a></p>
+  <p>THIS IS MY DBMS PROJECT</br>Email at coderstechcodeit@gmail.com if you wish to build any dynamic and static websites</p>  
+</footer>
+</body>
+</html>
